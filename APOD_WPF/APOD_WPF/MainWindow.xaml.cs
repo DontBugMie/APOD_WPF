@@ -57,5 +57,16 @@ namespace APOD_WPF
         {
 
         }
+
+
+        private bool IsSupportedFormat(string photoURL)
+        {
+            //extract the extension and force to lower case for comparison
+            string ext = System.IO.Path.GetExtension(photoURL).ToLower();
+
+            //check if string is supported wpf formats
+            return (ext == ".jpg" || ext == ".jpeg" || ext == ".png" || ext == ".gif" || ext == ".bmp" ||
+                    ext == ".wmf" || ext == ".tif" || ext == ".ico");
+        }
     }
 }
