@@ -7,12 +7,12 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="750" Width="900">
     <Grid>
-        <DatePicker x:Name="MonthCalendar" HorizontalAlignment="Left" Margin="48,30,0,0" VerticalAlignment="Top" Width="143"/>
-        <Button x:Name="LaunchButton" Content="Go to APOD launch date" HorizontalAlignment="Left" Margin="48,78,0,0" VerticalAlignment="Top" Width="143"/>
+        <DatePicker x:Name="MonthCalendar" HorizontalAlignment="Left" Margin="48,30,0,0" VerticalAlignment="Top" Width="143" SelectedDateChanged="MonthCalendar_SelectedDateChanged"/>
+        <Button x:Name="LaunchButton" Content="Go to APOD launch date" HorizontalAlignment="Left" Margin="48,78,0,0" VerticalAlignment="Top" Width="143" Click="LaunchButton_Click"/>
         <GroupBox Header="Settings" HorizontalAlignment="Left" Height="170" Margin="48,133,0,0" VerticalAlignment="Top" Width="289">
             <Grid>
                 <CheckBox x:Name="ShowTodaysImageCheckBox" Content="Show today's image on start up" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Tag=""/>
-                <CheckBox x:Name="ImagesTodayCheckBox" Content="Limit ranges to current year" HorizontalAlignment="Left" Margin="10,40,0,0" VerticalAlignment="Top" Tag=""/>
+                <CheckBox x:Name="LimitRangeCheckBox" Content="Limit ranges to current year" HorizontalAlignment="Left" Margin="10,40,0,0" VerticalAlignment="Top" Tag=""/>
                 <Label Content="Images downloaded today:" Margin="0,93,0,-93"/>
                 <TextBox x:Name="ImagesTodayTextBox" HorizontalAlignment="Left" Height="23" Margin="157,97,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="40" IsReadOnly="True" Background="#FFFFFFC0"/>
 
