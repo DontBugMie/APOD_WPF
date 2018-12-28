@@ -21,8 +21,9 @@
         <Label Content="Image Credit and Copyright:" HorizontalAlignment="Left" Margin="59,430,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="ImageCopyrightTextBox" HorizontalAlignment="Left" Height="23" Margin="59,461,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" IsReadOnly="True" Background="#FFFFFFBD"/>
         <Label Content="Description:" HorizontalAlignment="Left" Margin="59,508,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="DescriptionTextBox" HorizontalAlignment="Left" Height="150" Margin="59,539,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="797"/>
+        <TextBox x:Name="DescriptionTextBox" HorizontalAlignment="Left" Height="150" Margin="59,539,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="797" IsReadOnly="True" Background="#FFFFFFC0"/>
         <Border x:Name="PictureBorder" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="487" Margin="361,30,0,0" VerticalAlignment="Top" Width="495"/>
+        <Image x:Name="ImagePictureBox" HorizontalAlignment="Left" Height="487" Margin="361,30,0,0" VerticalAlignment="Top" Width="495"/>
 
 
 
