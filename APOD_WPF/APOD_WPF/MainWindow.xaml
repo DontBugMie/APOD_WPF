@@ -5,8 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:APOD_WPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="750" Width="900">
     <Grid>
-        
+        <DatePicker x:Name="MonthCalendar" HorizontalAlignment="Left" Margin="48,30,0,0" VerticalAlignment="Top" Width="143"/>
+        <Button x:Name="LaunchButton" Content="Go to APOD launch date" HorizontalAlignment="Left" Margin="48,78,0,0" VerticalAlignment="Top" Width="143"/>
+        <GroupBox Header="Settings" HorizontalAlignment="Left" Height="170" Margin="48,133,0,0" VerticalAlignment="Top" Width="289">
+            <Grid>
+                <CheckBox x:Name="ShowTodaysImageCheckBox" Content="Show today's image on start up" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Tag=""/>
+                <CheckBox x:Name="ImagesTodayCheckBox" Content="Limit ranges to current year" HorizontalAlignment="Left" Margin="10,40,0,0" VerticalAlignment="Top" Tag=""/>
+                <Label Content="Images downloaded today:" Margin="0,93,0,-93"/>
+                <TextBox x:Name="ImagesTodayTextBox" HorizontalAlignment="Left" Height="23" Margin="157,97,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="40" IsReadOnly="True" Background="#FFFFFFC0"/>
+
+            </Grid>
+        </GroupBox>
+        <Label Content="Image Credit and Copyright:" HorizontalAlignment="Left" Margin="59,430,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="ImageCopyrightTextBox" HorizontalAlignment="Left" Height="23" Margin="59,461,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" IsReadOnly="True" Background="#FFFFFFBD"/>
+        <Label Content="Description:" HorizontalAlignment="Left" Margin="59,508,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="DescriptionTextBox" HorizontalAlignment="Left" Height="150" Margin="59,539,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="797"/>
+        <Border x:Name="PictureBorder" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="487" Margin="361,30,0,0" VerticalAlignment="Top" Width="495"/>
+
+
+
+
     </Grid>
 </Window>
